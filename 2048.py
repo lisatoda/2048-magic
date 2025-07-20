@@ -114,7 +114,7 @@ def move_route():
     current_board = data.get('board')
     direction = data.get('direction')
 
-    # 验证 board 是否为二维数组
+    # 验证 board 是否为二维数组?
     if not isinstance(current_board, list) or not all(isinstance(row, list) for row in current_board):
         return jsonify({'error': 'Invalid board format'}), 400
 
